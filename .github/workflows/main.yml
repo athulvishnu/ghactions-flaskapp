@@ -48,4 +48,3 @@ jobs:
             --set image.repository=${{ secrets.DOCKER_USERNAME }}/flaskapp \
             --set image.tag=${{ env.SHORT_SHA }} \
             --namespace default
-            
