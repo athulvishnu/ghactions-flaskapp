@@ -1,0 +1,13 @@
+name: flask-app
+
+replicaCount: 1
+
+image:
+  repository: vishnu244/flaskapp
+  pullPolicy: Always
+  tag: latest
+
+service:
+  name: flask-app-service
+  type: LoadBalancer
+  port: 80
