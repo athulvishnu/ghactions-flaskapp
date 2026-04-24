@@ -3,7 +3,7 @@ name: flask-app
 replicaCount: 1
 
 image:
-  repository: vishnu244/flaskapp
+  repository: acrgha.azurecr.io/athulvishnu/flaskapp
   pullPolicy: Always
   tag: latest
 
