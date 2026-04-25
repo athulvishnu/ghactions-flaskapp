@@ -7,6 +7,9 @@ image:
   pullPolicy: Always
   tag: latest
 
+imagePullSecrets:
+  - name: acr-secret
+
 service:
   name: flask-app-service
   type: LoadBalancer

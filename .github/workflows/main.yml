@@ -31,7 +31,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build --build-arg COMMIT_SHA=${{ env.SHORT_SHA }} -t ${{ secrets.ACR_NAME }}.azurecr.io/flaskapp:${{ env.SHORT_SHA }} .
+          docker build-t ${{ secrets.ACR_NAME }}.azurecr.io/flaskapp:${{ env.SHORT_SHA }} .
           docker push ${{ secrets.ACR_NAME }}.azurecr.io/flaskapp:${{ env.SHORT_SHA }}
 
       - name: Set AKS context
